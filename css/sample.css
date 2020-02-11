@@ -1,0 +1,56 @@
+body
+{
+    background-color: black;
+}
+
+.container
+{
+    display: grid;
+    /* grid-template-columns: 50% 25% 25%; */
+    grid-template-columns: 30% 20% 15%  35%;
+    grid-template-rows:10% 40% 40% 10% ;
+    background-color: rgb(155, 100, 34);
+    width:40em;
+    height:40em;
+}
+.item {
+	
+}
+.one { 
+    background-color: crimson; 
+    grid-row: 1 / span 3; 
+    /* Starting from 1 it will take 3 rows */
+    
+     }
+.two { 
+    background-color: coral;
+    grid-column-start:2;
+    grid-column-end: 5;
+    }
+.thr { 
+    
+    background-color: gold;
+    grid-column-start:2;
+    grid-column-end: 5;
+    }
+.fou { 
+    
+    background-color: greenyellow; 
+    grid-column-start:2;
+    grid-column-end:4 ;
+   }
+.fiv { 
+    background-color: mediumturquoise;
+    grid-column-start:4;
+    grid-column-end:5 ;
+}
+.six { 
+    background-color: cornflowerblue; 
+    grid-column-start:1;
+    grid-column-end:3 ;
+    }
+.sev { background-color: mediumpurple;
+    grid-column-start:3;
+    grid-column-end:5 ;
+
+}
