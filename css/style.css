@@ -1,0 +1,86 @@
+body
+{
+    background-color: black;
+}
+
+.container
+{
+    display: grid;
+    /* grid-template-columns: 50% 25% 25%; */
+    
+    grid-template-columns: 2fr auto  1fr;
+    background-color: rgb(155, 100, 34);
+    grid-gap: 1em;
+    padding: 1em;
+    max-width: 60em;
+    margin: auto;
+}
+
+.item {
+    color: darkgray;
+    background-color: rgb(75, 79, 79);
+    border: 0.25em solid rgb(255, 255, 255);
+}
+
+
+
+@media screen and (max-width:40em)
+{
+    .container{
+      grid-template-columns: 1fr ;
+      background-color: grey;
+      grid-row-gap: 0.5em;
+    }
+}
+
+.container2
+{
+    display: grid;
+  
+    grid-template-columns: auto ;
+    background-color: rgb(155, 100, 34);
+    grid-gap: 1em;
+    padding: 1em;
+    max-width: 60em;
+    margin: auto;
+}
+
+.nongrid
+{
+    background-color: hotpink;
+    padding: 1em;
+}
+
+.item:first-child
+{
+    color: red;
+}
+
+.item:last-child
+{
+    color: red;
+}
+.item:nth-child(4)
+{
+    background-color: rgb(155, 100, 34);
+}
+.nongrid2 .item:nth-child(2n)
+{
+    background-color: rosybrown;
+    color: black;
+}
+@media screen and (min-width:40em)
+{
+    .container2{
+      grid-template-columns: 1fr 1fr ;
+      background-color: grey;
+    }
+}
+
+@media screen and (min-width:50em)
+{
+    .container2{
+      grid-template-columns: 1fr 1fr 1fr;
+      background-color: grey;
+    }
+}
