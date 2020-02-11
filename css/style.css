@@ -77,6 +77,11 @@ body
     }
 }
 
+
+/* Width:100vw means full width of viewport
+   Height:100vh means full height of viewport
+*/
+
 @media screen and (min-width:50em)
 {
     .container2{
